@@ -18,6 +18,17 @@ const CardDataStats: React.FC<CardDataStatsProps> = ({
   children,
 }) => {
   return (
+    /**
+     * This is a method in React and TypeScript that constructs a styled `div` block with a set of nested subcomponents. This method takes properties such as `children`, `total`, `title`, `rate`, `levelUp`, and `levelDown`.
+     *
+     * The outermost `div` has a set of styles applied which gives it a rounded border, background color, padding, and a shadow effect. The dark theme color properties are also applied.
+     *
+     * The first inner `div` is a circular container designed to hold any child components passed in. This `div` has its own set of background color styles.
+     *
+     * The second inner `div` contains two sections: a header with a total count and a title, as well as a span that holds the rate and potentially an SVG icon. If `levelUp` is true, the rate text is colored and an upward pointing arrow is shown. If `levelDown` is true, the rate text is colored differently and a downward pointing arrow is shown.
+     *
+     * This method is likely used to create a reusable card component in a user interface that displays some sort of countable data, a title, and a rate of increase or decrease.
+     */
     <div className="rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div className="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4">
         {children}

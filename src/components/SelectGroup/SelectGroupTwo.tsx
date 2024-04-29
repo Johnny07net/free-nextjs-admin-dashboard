@@ -10,6 +10,20 @@ const SelectGroupTwo: React.FC = () => {
   };
 
   return (
+    /**
+     * This method renders a select input field for choosing a country.
+     *
+     * The input field is contained within a div component and is styled with tailwind CSS classes.
+     * The select input field contains options to select a country: "USA", "UK", and "Canada".
+     *
+     * Within the select input field, value and onChange props are set. The value prop is set to the state variable `selectedOption`, which is initially empty.
+     * When an option is selected from the list, the `onChange` event triggers two methods: `setSelectedOption` and `changeTextColor`.
+     * `setSelectedOption` updates the state variable `selectedOption` with the selected value, and `changeTextColor` presumably changes the text color.
+     *
+     * The select input field is styled conditionally based on whether an option is selected or not (as determined by the state variable `isOptionSelected`).
+     *
+     * The select input field is accompanied by SVG icons on both sides. On the left, the SVG icon is of a globe and on the right, there is an arrow facing downwards indicating the dropdown feature.
+     */
     <div>
       <label className="mb-3 block text-sm font-medium text-black dark:text-white">
         Select Country
