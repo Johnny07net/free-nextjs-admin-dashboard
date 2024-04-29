@@ -55,6 +55,18 @@ const chatData: Chat[] = [
 
 const ChatCard = () => {
   return (
+    /**
+     * This is a component that creates a chat interface.
+     * The top level div component acts as a container for the chat interface, with certain styles applied for appearance and layout.
+     * The h4 element represents the title of the chat interface, 'Chats'.
+     * The component then maps through the `chatData` array to display each individual chat in the UI.
+     * For each chat, a Link component is rendered which contains the chat information.
+     * The Link component contains a div for the chat avatar, with an Image component displaying the chat user's avatar and a dot representing their status.
+     * The Link component also contains a div for chat details, including the chat user's name and the chat text, with the time since the last message.
+     * If the chat has any unread messages, it displays a count of those messages in a separate div.
+     *
+     * @returns A chat interface UI as a JSX element.
+     */
     <div className="col-span-12 rounded-sm border border-stroke bg-white py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
       <h4 className="mb-6 px-7.5 text-xl font-semibold text-black dark:text-white">
         Chats

@@ -10,6 +10,17 @@ import MapOne from "../Maps/MapOne";
 
 const ECommerce: React.FC = () => {
   return (
+    /**
+     * This TSX method is a functional component that renders a layout of different data cards and charts.
+     * The first `div` creates a grid of data cards, each encapsulating different kinds of data metrics
+     * such as "Total views", "Total Profit", "Total Product", and "Total Users". Each card includes a
+     * respective SVG icon. The grid is responsive and the number of columns changes based on the screen size.
+     *
+     * The second `div` creates another responsive grid that holds different types of charts and a table.
+     * The grid includes `ChartOne`, `ChartTwo`, `ChartThree`, `MapOne`, `TableOne` and `ChatCard` components.
+     * The `TableOne` component spans more space on larger screens, making full use of the available screen real estate.
+     * This method is useful for creating dashboards or data visualization pages.
+     */
     <>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5">
         <CardDataStats title="Total views" total="$3.456K" rate="0.43%" levelUp>

@@ -94,6 +94,19 @@ const MultiSelect: React.FC<DropdownProps> = ({ id }) => {
   });
 
   return (
+    /**
+     * This TSX method renders a multiselect dropdown component with stylized options.
+     *
+     * The dropdown allows for multiple selections. The selected options are displayed in the dropdown
+     * field itself, each with a removal button. If no options are selected, a placeholder text is displayed.
+     *
+     * The dropdown list is hidden by default and is displayed on click or focus.
+     *
+     * Each option in the dropdown list is a clickable element that upon click, toggles its
+     * selection state and updates the display in the dropdown field accordingly.
+     *
+     * The dropdown component uses a mix of light and dark themes based on the global theme setting.
+     */
     <div className="relative z-50">
       <label className="mb-3 block text-sm font-medium text-black dark:text-white">
         Multiselect Dropdown

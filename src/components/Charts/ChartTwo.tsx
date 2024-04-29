@@ -91,6 +91,19 @@ const ChartTwo: React.FC = () => {
   handleReset;
 
   return (
+    /**
+     * This method renders a section of a user interface that displays profits for the current or previous week.
+     * The section is styled with a white or dark background, depending on the current theme.
+     *
+     * The top of the section contains a title ("Profit this week") and a dropdown menu
+     * that allows the user to select either "This Week" or "Last Week".
+     * The dropdown menu selection does not currently have any functionality.
+     *
+     * The bottom of the section contains a bar chart displaying profit data.
+     * The chart is rendered using the ReactApexChart library,
+     * with the data and options provided from the `state` and `options` properties, respectively.
+     * The chart has a fixed height of 350 units, but adapts its width to fill 100% of the available space.
+     */
     <div className="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
       <div className="mb-4 justify-between gap-4 sm:flex">
         <div>

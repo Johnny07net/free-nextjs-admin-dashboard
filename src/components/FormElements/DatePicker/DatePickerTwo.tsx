@@ -17,6 +17,16 @@ const DatePickerTwo = () => {
   }, []);
 
   return (
+    /**
+     * This is a method for rendering a datepicker input field.
+     * It first renders a label with the text 'Select date'. The label styling changes based on the current theme.
+     * The method then renders a relative div that contains the interactive components.
+     * The first interactive component is an input field styled with classes that are also theme-dependent, with a placeholder text set to "mm/dd/yyyy".
+     * A data-class="flatpickr-right" attribute is also set on the input, indicating its use with the flatpickr library.
+     * The second interactive component is an absolute positioned div that contains an SVG icon. This SVG is a drop-down arrow meant to indicate the drop-down nature of the datepicker.
+     * The SVG icon is grey and changes position with respect to the right side of the relative parent div.
+     * The SVG and input fields are wrapped in a relative div to allow for absolute positioning of the SVG relative to the input field.
+     */
     <div>
       <label className="mb-3 block text-sm font-medium text-black dark:text-white">
         Select date

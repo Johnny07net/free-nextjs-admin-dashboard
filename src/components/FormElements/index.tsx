@@ -16,6 +16,27 @@ import SelectGroupTwo from "@/components/SelectGroup/SelectGroupTwo";
 
 const FormElements = () => {
   return (
+    /**
+     * This method creates a dynamic form with different types of form elements.
+     *
+     * Features:
+     * - It includes a breadcrumb component at the top indicating the current page.
+     * - The form is created inside a grid layout with two columns in `sm` screens.
+     * - The left column (first grid column) includes:
+     *   - A set of input fields (default, active, and disabled).
+     *   - A set of toggle switches.
+     *   - Date and time picker components.
+     *   - File upload components.
+     * - The right column (second grid column) includes:
+     *   - A set of text area fields (default, active, and disabled).
+     *   - A set of checkbox components.
+     *   - Different types of select input components including a multi-select.
+     * - All the form components are wrapped inside a rounded bordered box with a specific header.
+     * - Each form component has a label and is styled based on the current theme (light or dark).
+     * - Disabled components are visually dimmed and do not respond to user interactions.
+     *
+     * Note: This method does not include any form submission or validation logic.
+     */
     <>
       <Breadcrumb pageName="FormElements" />
 

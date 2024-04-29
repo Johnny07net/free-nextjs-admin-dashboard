@@ -145,6 +145,20 @@ const ChartOne: React.FC = () => {
   handleReset;
 
   return (
+        /**
+     * This is a TSX method that renders a UI component for displaying statistical data. 
+     *
+     * The UI consists of two sections, each in a div wrapper. 
+     * The first section has two main display items, each displaying a data value 
+     * - 'Total Revenue' and 'Total Sales' - along with an associated date range. 
+     * Each display item is color-coded for visual distinction. 
+     * There is also a set of three toggle buttons labeled 'Day', 'Week', and 'Month' for filtering the data by different time periods.
+     *
+     * The second section hosts an `Area` chart from the `ReactApexChart` library to visually represent the data. 
+     * The chart's dimensions, data, and other settings are defined by the passed `options` and `state.series` props.
+     *
+     * Styling of the component is done using Tailwind CSS utility classes, with additional support for dark mode.
+     */
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-8">
       <div className="flex flex-wrap items-start justify-between gap-3 sm:flex-nowrap">
         <div className="flex w-full flex-wrap gap-3 sm:gap-5">

@@ -10,6 +10,19 @@ const Header = (props: {
   setSidebarOpen: (arg0: boolean) => void;
 }) => {
   return (
+    /**
+     * This `tsx` component creates a fixed header at the top of the page with a z-index of 999. The header includes several sub-components:
+     *
+     * 1. A mobile-friendly hamburger button that toggles the sidebar open and close. The hamburger icon transforms into a close icon when the sidebar is open.
+     * 2. A `Link` component that navigates back to the home page when clicked. This link contains an image that serves as the website logo.
+     * 3. A search form that uses `formbold.com` as the action URL. The form includes a styled input field for text search.
+     * 4. A dark mode toggler switcher which allows user to shift between light and dark theme.
+     * 5. A notification area that uses a `DropdownNotification` component to display notifications.
+     * 6. A chat notification area that uses a `DropdownMessage` component to display chat messages.
+     * 7. A user area that uses a `DropdownUser` component to display user-related information and options.
+     *
+     * The header and its components are responsive and adjust their styling and layout based on the viewport size.
+     */
     <header className="sticky top-0 z-999 flex w-full bg-white drop-shadow-1 dark:bg-boxdark dark:drop-shadow-none">
       <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
         <div className="flex items-center gap-2 sm:gap-4 lg:hidden">

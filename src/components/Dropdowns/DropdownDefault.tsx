@@ -33,6 +33,14 @@ const DropdownDefault = () => {
   });
 
   return (
+    /**
+     * This is a React component that renders a button with an SVG icon and a dropdown menu.
+     * The button, when clicked, toggles the visibility of the dropdown menu.
+     * The dropdown menu has focus and blur event handlers that modify its visibility when the dropdown is focused or blurred.
+     * The dropdown menu contains two buttons, "Edit" and "Delete", each represented with a respective SVG icon and text.
+     * The "Edit" and "Delete" buttons, also have a hover effect that changes their background color.
+     * This component uses Tailwind CSS for styling.
+     */
     <div className="relative flex">
       <button
         className="text-[#98A6AD] hover:text-body"

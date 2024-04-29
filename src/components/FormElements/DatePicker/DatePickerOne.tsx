@@ -17,6 +17,13 @@ const DatePickerOne = () => {
   }, []);
 
   return (
+    /**
+     * This method renders a date picker input field. The date picker is contained within a div, with a label 'Date picker'.
+     * The input field uses the 'form-datepicker' class, and has a placeholder text 'mm/dd/yyyy'.
+     * The input field has various CSS classes applied for different states and themes, such as focus and dark mode.
+     * The date picker also includes an SVG icon to the right of the input field, signifying a calendar.
+     * The div structure helps in achieving the required visual layout and functionality.
+     */
     <div>
       <label className="mb-3 block text-sm font-medium text-black dark:text-white">
         Date picker

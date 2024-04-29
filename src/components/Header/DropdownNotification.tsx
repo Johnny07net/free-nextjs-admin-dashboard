@@ -34,6 +34,22 @@ const DropdownNotification = () => {
   });
 
   return (
+    /**
+     * This TSX method renders a list item with a "relative" class.
+     * The list item contains a Link component which toggles the dropdown menu visibility and notification status.
+     * Upon clicking this link, the `setNotifying` state is set to false, and the `setDropdownOpen` state toggles to either true or false.
+     * The link has various CSS classes applied for styling and a SVG graphic as its child.
+     *
+     * In addition, the list item contains a div which holds the dropdown menu.
+     * This div has a `ref` of `dropdown`, and has `onFocus` and `onBlur` events to control the dropdown visibility (setDropdownOpen state).
+     * The dropdown menu has a title "Notification" and a list of notifications.
+     * Each notification is a Link component with brief information and a date.
+     *
+     * All classes applied in the elements are for styling.
+     * The classNames `block` and `hidden` are used for showing and hiding the dropdown menu.
+     * The classNames `inline` and `hidden` are used for showing and hiding the notification bubble.
+     * Various `dark` classes are for dark mode styling.
+     */
     <li className="relative">
       <Link
         ref={trigger}

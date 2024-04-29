@@ -4,6 +4,19 @@ const DarkModeSwitcher = () => {
   const [colorMode, setColorMode] = useColorMode();
 
   return (
+    /**
+     * This is a method that renders a list item containing a label with a checkbox input and an SVG icon.
+     *
+     * Depending on the current color mode (light or dark), the label's and SVG's classes will change.
+     * The label contains an input of type checkbox which, when clicked, toggles the color mode between light and dark.
+     * The SVG icon displayed depends on the color mode as well.
+     *
+     * The checkbox input has an opacity of 0 making it invisible while still being clickable.
+     * When the checkbox is clicked, it triggers an onChange event that checks if setColorMode is a function and if it is, it calls setColorMode and passes the opposite of the current color mode.
+     *
+     * The SVG icons are placed inside a span that moves based on the color mode.
+     * If the color mode is dark, it applies a translation to the SVG icon, effectively moving it to the other end of the label.
+     */
     <li>
       <label
         className={`relative m-0 block h-7.5 w-14 rounded-full ${

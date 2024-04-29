@@ -63,6 +63,17 @@ const ChartThree: React.FC = () => {
   handleReset;
 
   return (
+        /**
+     * This method renders a TSX component representing a visitor analytics dashboard. 
+     * The dashboard provides information on the types of devices visitors are using to access the website/application.
+     * It provides the following features:
+     * - A title heading that states "Visitors Analytics".
+     * - A dropdown menu for selecting the duration for the metrics display, with options "Monthly" and "Yearly".
+     * - A donut chart that visually represents the percentage distribution of the devices used by visitors.
+     * - A detailed view of the device types (Desktop, Tablet, Mobile, Unknown) along with their corresponding usage percentages.
+     * 
+     * This component automatically adjusts its layout for different screen sizes using responsive design techniques.
+     */
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-5">
       <div className="mb-3 justify-between gap-4 sm:flex">
         <div>
